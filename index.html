@@ -1,0 +1,1172 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.7">
+    
+    
+      
+        <title>SMART Health Cards Framework</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.19753c6b.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.196e0c26.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="style.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+      
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#status" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="." title="SMART Health Cards Framework" class="md-header-nav__button md-logo" aria-label="SMART Health Cards Framework">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            SMART Health Cards Framework
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Protocol
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/smart-on-fhir/health-cards/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="SMART Health Cards Framework" class="md-nav__button md-logo" aria-label="SMART Health Cards Framework">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    SMART Health Cards Framework
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/smart-on-fhir/health-cards/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Protocol
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="." class="md-nav__link md-nav__link--active">
+      Protocol
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#status" class="md-nav__link">
+    Status
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contributing" class="md-nav__link">
+    Contributing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#overview-video-november-2020" class="md-nav__link">
+    Overview Video (November 2020)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction-health-cards" class="md-nav__link">
+    Introduction -- Health Cards
+  </a>
+  
+    <nav class="md-nav" aria-label="Introduction -- Health Cards">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#conceptual-model" class="md-nav__link">
+    Conceptual Model
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#design-goals" class="md-nav__link">
+    Design Goals
+  </a>
+  
+    <nav class="md-nav" aria-label="Design Goals">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#start-small-think-big" class="md-nav__link">
+    Start Small -- Think Big
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-experience" class="md-nav__link">
+    User Experience
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#demo" class="md-nav__link">
+    Demo
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#design-considerations" class="md-nav__link">
+    Design Considerations
+  </a>
+  
+    <nav class="md-nav" aria-label="Design Considerations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data-flow" class="md-nav__link">
+    Data Flow
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trust" class="md-nav__link">
+    Trust
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#privacy" class="md-nav__link">
+    Privacy
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-model" class="md-nav__link">
+    Data Model
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#protocol-details" class="md-nav__link">
+    Protocol Details
+  </a>
+  
+    <nav class="md-nav" aria-label="Protocol Details">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#install-a-health-wallet-app" class="md-nav__link">
+    Install a “Health Wallet” app
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#connect-health-wallet-to-lab-account" class="md-nav__link">
+    Connect Health Wallet to Lab Account
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lab-generates-results" class="md-nav__link">
+    Lab Generates Results
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lab-results-are-finalized" class="md-nav__link">
+    Lab Results are Finalized
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#presenting-lab-results-to-a-verifier" class="md-nav__link">
+    Presenting Lab Results to a Verifier
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#potential-extensions" class="md-nav__link">
+    Potential Extensions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="credential-modeling/" class="md-nav__link">
+      Credentials
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="vocabulary/" class="md-nav__link">
+      Vocabulary
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="changelog/" class="md-nav__link">
+      Changelog
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#status" class="md-nav__link">
+    Status
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contributing" class="md-nav__link">
+    Contributing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#overview-video-november-2020" class="md-nav__link">
+    Overview Video (November 2020)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction-health-cards" class="md-nav__link">
+    Introduction -- Health Cards
+  </a>
+  
+    <nav class="md-nav" aria-label="Introduction -- Health Cards">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#conceptual-model" class="md-nav__link">
+    Conceptual Model
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#design-goals" class="md-nav__link">
+    Design Goals
+  </a>
+  
+    <nav class="md-nav" aria-label="Design Goals">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#start-small-think-big" class="md-nav__link">
+    Start Small -- Think Big
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-experience" class="md-nav__link">
+    User Experience
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#demo" class="md-nav__link">
+    Demo
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#design-considerations" class="md-nav__link">
+    Design Considerations
+  </a>
+  
+    <nav class="md-nav" aria-label="Design Considerations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data-flow" class="md-nav__link">
+    Data Flow
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trust" class="md-nav__link">
+    Trust
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#privacy" class="md-nav__link">
+    Privacy
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-model" class="md-nav__link">
+    Data Model
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#protocol-details" class="md-nav__link">
+    Protocol Details
+  </a>
+  
+    <nav class="md-nav" aria-label="Protocol Details">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#install-a-health-wallet-app" class="md-nav__link">
+    Install a “Health Wallet” app
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#connect-health-wallet-to-lab-account" class="md-nav__link">
+    Connect Health Wallet to Lab Account
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lab-generates-results" class="md-nav__link">
+    Lab Generates Results
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lab-results-are-finalized" class="md-nav__link">
+    Lab Results are Finalized
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#presenting-lab-results-to-a-verifier" class="md-nav__link">
+    Presenting Lab Results to a Verifier
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#potential-extensions" class="md-nav__link">
+    Potential Extensions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/smart-on-fhir/health-cards/edit/main/docs/index.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                  <h1>Protocol</h1>
+                
+                <h3 id="status">Status<a class="headerlink" href="#status" title="Permanent link">&para;</a></h3>
+<p>Draft implementation guide authored with input from technology and lab vendors; created in conjunction with four independent software implementations.</p>
+<h3 id="contributing">Contributing<a class="headerlink" href="#contributing" title="Permanent link">&para;</a></h3>
+<p>To propose changes, please use GitHub <a href="https://github.com/smart-on-fhir/health-cards/issues">Issues</a> or create a <a href="https://github.com/smart-on-fhir/health-cards/pulls">Pull Request</a>.</p>
+<h3 id="overview-video-november-2020">Overview Video (November 2020)<a class="headerlink" href="#overview-video-november-2020" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://youtu.be/UdlmRoJK1Yg">https://youtu.be/UdlmRoJK1Yg</a></li>
+</ul>
+<h2 id="introduction-health-cards">Introduction -- Health Cards<a class="headerlink" href="#introduction-health-cards" title="Permanent link">&para;</a></h2>
+<p>This implementation guide provides a framework for "Health Cards", with a short term goal to enable a consumer to receive COVID-19 Immunization or lab results and <strong>present these results to another party in a verifiable manner</strong>. Key use cases include conveying point-in-time infection status for return-to-workplace and travel. This approach should also support documentation of immunization status and other health details.</p>
+<p>Because we must ensure end-user privacy and because Health Cards must work across organizational and jurisdictional boundaries, we are building on international open standards and decentralized infrastructure. </p>
+<h3 id="conceptual-model">Conceptual Model<a class="headerlink" href="#conceptual-model" title="Permanent link">&para;</a></h3>
+<p><img alt="Figure" src="https://i.imgur.com/T8RHjlJ.png" /></p>
+<ul>
+<li><strong>Issuer</strong> (e.g., a lab) generates verifiable credentials </li>
+<li><strong>Holder</strong> stores credentials and presents them at will</li>
+<li><strong>Verifier</strong> receives credentials from holder and ensures they are properly signed</li>
+</ul>
+<h2 id="design-goals">Design Goals<a class="headerlink" href="#design-goals" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Support <strong>end-to-end workflow</strong> where users receive and present relevant healthcare data</li>
+<li>Enable workflow with <strong>open standards</strong></li>
+<li>Support strong <strong>cryptographic signatures</strong></li>
+<li>Support <strong>binding credentials to keys</strong> stored on a user's device</li>
+<li>Enable <strong>privacy preserving</strong> data presentations for specific use cases</li>
+</ul>
+<h3 id="start-small-think-big">Start Small -- Think Big<a class="headerlink" href="#start-small-think-big" title="Permanent link">&para;</a></h3>
+<p>We enable Health Cards  by defining building blocks that can be used across healthcare. The core building block allows us to aggregate data into meaningful sets, signed by an issuer, and stored/presented by a consumer as needed. The broader set of use cases might eventually include:</p>
+<ul>
+<li>Managing an immunization record that can be shared with schools or employers, or for travel</li>
+<li>Sharing verifiable health history data with clinical research studies</li>
+<li>Sharing voluntary data with public health agencies</li>
+<li>Sharing questionnaire responses with healthcare providers</li>
+</ul>
+<p>Despite this broad scope, our <em>short-term definition of success</em> requires that we:</p>
+<ul>
+<li>Represent "Health Cards" in a "Health Wallet", focusing on COVID-19 status</li>
+<li>Ensure that each role (issuer, holder, app) can be implemented by any organization following open standards, provided they sign on to the relevant trust framework</li>
+<li>Align with a longer term vision for standards-based decentralized identity, where each role (issuer, holder, app)</li>
+</ul>
+<h3 id="user-experience">User Experience<a class="headerlink" href="#user-experience" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Install</strong> a "Health Wallet" app</li>
+<li><strong>Connect</strong> the Health Wallet to a lab account</li>
+<li><strong>Save</strong> a COVID-19 results card from the lab to the Health Wallet</li>
+<li>When a user wants to <strong>share</strong> COVID-19 results with a verifier:
+    a) Open Health Wallet
+    b) Scan a QR code displayed by verifier
+    c) Agree when prompted with "Share COVID-19 results with <em>{Verifier Name</em>}?"</li>
+</ol>
+<h3 id="demo">Demo<a class="headerlink" href="#demo" title="Permanent link">&para;</a></h3>
+<p>Sometimes it's easiest to learn by seeing. For an end-to-end demonstration including Mobile Wallet, Lab API, and Verifier, see <a href="https://c19.cards/">c19.cards</a> (source code <a href="https://github.com/microsoft-healthcare-madison/health-wallet-demo">on GitHub</a> -- and if you want to learn how to test your own components against the demo site, see <a href="https://github.com/microsoft-healthcare-madison/health-wallet-demo/blob/master/README.md#using-the-hosted-demo-components">README.md</a>).</p>
+<h5>Demo Mobile Wallet: Home Screen</h5>
+<p><img alt="" src="https://i.imgur.com/pMuA3N9.png" /></p>
+<h5>Demo Mobile Wallet Approval Screen</h5>
+<p><img alt="" src="https://i.imgur.com/fDdem2h.png" /></p>
+<h2 id="design-considerations">Design Considerations<a class="headerlink" href="#design-considerations" title="Permanent link">&para;</a></h2>
+<p>This section outlines higher-level design considerations. See <a href="#protocol-details">"Protocol Details"</a> below for technical details.</p>
+<h3 id="data-flow">Data Flow<a class="headerlink" href="#data-flow" title="Permanent link">&para;</a></h3>
+<p>Each step in the flow must have well-defined inputs and outputs. For each step we define at least one required data transfer method to establish a basis for interoperability.</p>
+<h4>Connecting Health Wallet to Lab</h4>
+<ul>
+<li>Required method: OpenID Connect (OIDC) redirect + <code>form_post</code> flow</li>
+<li>Optional entry point: FHIR <code>$HealthWallet.connect</code> operation to begin the OIDC redirect</li>
+</ul>
+<h4>Getting credentials into Health Wallet</h4>
+<ul>
+<li>Required method: File download</li>
+<li>Optional method: <a href="#healthwalletissuevc-operation">FHIR API Access</a></li>
+</ul>
+<h4>Presenting credentials to Verifier</h4>
+<ul>
+<li>Required method: OpenID Connect (OIDC) redirect + <code>form_post</code> flow (assumes devices are online)</li>
+<li>Optional method: Direct device-to-device connections (e.g. Bluetooth, NFC -- out of scope in the short term)</li>
+</ul>
+<h3 id="trust">Trust<a class="headerlink" href="#trust" title="Permanent link">&para;</a></h3>
+<p>Which issuers can participate, which test results should be considered, and how do verifiers learn this information?</p>
+<p>At a <em>pilot project level</em>:</p>
+<h4>Which Issuers can participate?</h4>
+<ul>
+<li>We'll work with a willing set of issuers and define expectations/requirements</li>
+<li>Verifiers will learn the list of participating issuers out of band; each issuer will be associated with a public URL</li>
+<li>Verifiers will discover public keys associated with an issuer via <a href="https://identity.foundation/.well-known/resources/did-configuration/"><code>.well-known</code> DID URLs</a></li>
+<li>For transparency, we'll publish a list of participating organizations in a public directory</li>
+</ul>
+<h4>Which lab tests should be considered in decision-making?</h4>
+<ul>
+<li>We'll create or identify FHIR profiles for each lab test that define required fields, vocabularies, etc.</li>
+<li>Verifiers will learn out of band about which lab tests should be considered in decision-making; this set is expected to evolve over time as new tests are developed and as our scientific understanding evolves</li>
+</ul>
+<p>In a <em>post-pilot deployment</em>: a network of participants would define and agree to a formal Trust Framework. This is still TBD.</p>
+<h3 id="privacy">Privacy<a class="headerlink" href="#privacy" title="Permanent link">&para;</a></h3>
+<p>It is an explicit design goal to let the holder <strong>only disclose a minimum amount of information</strong> to a verifier. The information <em>required</em> to be disclosed is use-case dependent, and -- particularly in a healthcare setting -- it can be difficult for lay people to judge which data elements are necessary to be shared.</p>
+<p>To start, the granularity of information disclosure will be at the level of an entire credential (i.e., a user can select "which cards" to share from a Health Wallet, and each card is shared wholesale). The credentials are designed to only include the minimum information necessary for a given use case.</p>
+<p>If we identify <em>optional</em> data elements for a given use case, we might incorporate them into credentials by including a cryptographic hash of their values instead of embedding values directly. Longer term we can provide more granular options using techniques like zero-knowledge proofs, or by allowing a trusted intermediary to sumamrize results in a just-in-time fashion.</p>
+<h3 id="data-model">Data Model<a class="headerlink" href="#data-model" title="Permanent link">&para;</a></h3>
+<p>The credential's data is <strong>represented in FHIR</strong> as outlined in <a href="./credential-modeling/">Modeling Verifiable Credentials in FHIR</a></p>
+<h2 id="protocol-details">Protocol Details<a class="headerlink" href="#protocol-details" title="Permanent link">&para;</a></h2>
+<h3 id="install-a-health-wallet-app">Install a “Health Wallet” app<a class="headerlink" href="#install-a-health-wallet-app" title="Permanent link">&para;</a></h3>
+<p>In this step, the user installs a standards-based mobile app. The app generates a decentralized identifier on behalf of the user, including:</p>
+<ul>
+<li>a key of type <code>JsonWebKey2020</code> to enable verification of JWT signatures created by this issuer, using the <code>"alg": "ES256"</code> signature algorithm</li>
+<li>a key of type <code>JsonWebKey2020</code> to enable encryption of JWE payloads created for this issuer, using the <code>"alg": "ECDH-ES"</code> and <code>"enc": "A256GCM"</code> encryption algorithm</li>
+</ul>
+<p>This identifier conforms to the <a href="https://identity.foundation/sidetree/spec/"><code>did:ion</code> method</a>; it will be used for secure interactions with the issuer and the verifier, from here on out. A good way to start is to build out ION DIDs in <a href="https://identity.foundation/sidetree/spec/#long-form-did-uris">Long-Form</a>.</p>
+<div class="admonition question">
+<p class="admonition-title"> <strong>DID Methods</strong></p>
+<p>There are different DID methods, with trade-offs. It's useful to pick an approach that:</p>
+<ul>
+<li>works for issuers as well as holders</li>
+<li>works peer-to-peer <em>or</em> anchored to a public record</li>
+<li>supports key rotation</li>
+<li>supports distinct keys per-device</li>
+<li>supports service endpoint discovery</li>
+</ul>
+<p>So we're starting with <code>did:ion</code>, but should continue to evaluate this choice as requirements emerge. </p>
+</div>
+<div class="admonition question">
+<p class="admonition-title"><strong>Signature and encryption algorithms</strong></p>
+<p>There are different cryptographic algorithms, with trade-offs. It's useful to pick algorithms for consistent implementations -- so we're starting with <code>ES256</code> for verification and <code>ECDH-ES</code> + <code>A256GCM</code> for encryption, but should continue to evaluate this choice as requirements emerge.</p>
+</div>
+<h3 id="connect-health-wallet-to-lab-account">Connect Health Wallet to Lab Account<a class="headerlink" href="#connect-health-wallet-to-lab-account" title="Permanent link">&para;</a></h3>
+<p>In this step, the lab learns about the end-user's DID. To accomplish this, the lab initiates an OpenID Connect request associated with the user's account (e.g., by displaying a link or a QR code in the portal, or by hosting a FHIR API endpoint that allows a third-party app to initiate an OIDC request). The specific OpenID Connect profile we use is called <a href="https://identity.foundation/did-siop/">"DID SIOP"</a>.</p>
+<div class="admonition info">
+<p class="admonition-title"><strong>Discovering DIDs for labs</strong></p>
+<p>To ensure that all parties can maintain an up-to-date list of DIDs for known labs, each lab <a href="https://identity.foundation/.well-known/resources/did-configuration/">hosts a <code>/.well-known/did-configuration.json</code> file</a> on the same domain as <code>.registration.client_uri</code> lives on, so parties such as the Health Wallet app can maintain a list of DIDs for each domain.</p>
+</div>
+<div class="mermaid">sequenceDiagram
+
+participant Device as User's Device
+participant Lab
+
+Device -&gt;&gt; Device: Create users DID:ION: keys
+Lab -&gt;&gt; Lab: Create DID:ION: keys
+
+note over Device: Later, either [A], [B] or [C]...
+Lab --&gt;&gt; Device: [A] Click `openid://` link on issuer's portal
+Lab --&gt;&gt; Device: [B] Scan QR code or NFC tag with `openid://` link
+Device --&gt;&gt; Lab: [C] FHIR $HealthWallet.connect
+Lab --&gt;&gt; Device: [C] Return `openid://` link in FHIR Parameters resource
+Device -&gt;&gt; Device: React to `openid` link
+Device -&gt;&gt; Device: Validate prompt
+
+note over Device: Ask user to connect
+Device -&gt;&gt; Lab: Issue request to `request_uri`
+Lab -&gt;&gt; Lab: Generate DID SIOP request with lab's keys
+Lab -&gt;&gt; Device: Return DID SIOP Request
+Device -&gt;&gt; Device: Validate DID SIOP JWT
+
+note over Device: Ask user to share keys
+Device -&gt;&gt; Device: Formulate DID SIOP Response
+Device -&gt;&gt; Lab: Submit response ([C] with Authorization header)
+Lab -&gt;&gt; Lab: Store keys to user account
+Lab -&gt;&gt; Device: Ack</div>
+<h4>DID SIOP Request Discovery</h4>
+<p>The lab constructs an OIDC request, which is displayed to the user (newlines and spaces added for clarity):</p>
+<div class="highlight"><pre><span></span><code>openid://?
+  response_type=id_token
+  &amp;scope=did_authn
+  &amp;request_uri=&lt;&lt;URL where request object can be found&gt;&gt;
+  &amp;client_id=&lt;&lt;URL where response object will be posted&gt;&gt;
+</code></pre></div>
+<p>By using this URI-based approach, the lab can choose to display a static QR code printed on a sticker at the check-in counter, generating the signed request objects dynamically each time a client dereferences the <code>request_uri</code>.</p>
+<div class="admonition info">
+<p class="admonition-title">Simplifying the workflow when a FHIR API connection exists</p>
+<p>If the Health Wallet app already has a FHIR API connection to the lab that includes the <code>__HealthWallet.*</code> scope, the app can begin an OIDC connection by invoking the <code>$HealthWallet.connect</code> operation:</p>
+<pre><code>GET /Patient/:id/$HealthWallet.connect
+</code></pre>
+<p>The operation returns a FHIR <code>Parameters</code> resource with the OIDC request URL:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;resourceType&quot;</span><span class="p">:</span> <span class="s2">&quot;Parameters&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;parameter&quot;</span><span class="p">:</span> <span class="p">[{</span>
+    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;openidUrl&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;valueUri&quot;</span><span class="p">:</span> <span class="s2">&quot;openid://?response_type=...&quot;</span>
+  <span class="p">}]</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>This allows the Health Wallet to begin the connection workflow directly, without requiring the user to sign into the lab portal or take any extra steps. This is an optional entry point for the connection workflow; it does not change the subsequent steps.</p>
+</div>
+<h4>DID SIOP Request</h4>
+<p>The <code>&lt;&lt;URL where request object can be found&gt;&gt;</code> in <code>request_uri</code> can be dereferened to a <strong>DID SIOP Request</strong>. This is a signed <em>JWT</em> that will have a <strong>DID</strong> as its <code>kid</code>.</p>
+<p>With a header like:
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;alg&quot;</span><span class="p">:</span> <span class="s2">&quot;ES256&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;typ&quot;</span><span class="p">:</span> <span class="s2">&quot;JWT&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;kid&quot;</span><span class="p">:</span> <span class="s2">&quot;did:ion:&lt;&lt;identifer for lab&gt;&gt;#&lt;&lt;verification-key-id&gt;&gt;&quot;</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<p>And a payload like:
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;iss&quot;</span><span class="p">:</span> <span class="s2">&quot;did:ion:&lt;&lt;did-value&gt;&gt;&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;response_type&quot;</span><span class="p">:</span> <span class="s2">&quot;id_token&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;client_id&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;&lt;URL where response object will be posted&gt;&gt;&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;scope&quot;</span><span class="p">:</span> <span class="s2">&quot;openid did_authn&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;response_mode&quot;</span> <span class="p">:</span> <span class="s2">&quot;form_post&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;response_context&quot;</span><span class="p">:</span> <span class="s2">&quot;wallet&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;nonce&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;&lt;unique value&gt;&gt;&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;&lt;client-supplied value, possibly empty&gt;&gt;&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;registration&quot;</span><span class="p">:</span>  <span class="p">{</span>
+    <span class="nt">&quot;id_token_signed_response_alg&quot;</span> <span class="p">:</span> <span class="s2">&quot;ES256&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;id_token_encrypted_response_alg&quot;</span><span class="p">:</span> <span class="s2">&quot;ECDH-ES&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;id_token_encrypted_response_enc&quot;</span><span class="p">:</span> <span class="s2">&quot;A256GCM&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;client_uri&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;&lt;base URL for lab&gt;&gt;&quot;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<p>The <code>id_token_encrypted_response_*</code> parameters are optional and, if present, signal that the response to this request should be encrypted, not just signed.</p>
+<h5>Request Options</h5>
+<ul>
+<li><code>response_mode</code>: the Health Wallet should recognize and support <code>form_post</code> and <code>fragment</code> modes.</li>
+<li><code>response_context</code> of <code>wallet</code> allows the relying party to indicate that the wallet can issue a response in its own user agent context, effectively performing a "headless" submission and keeping the user in the wallet at the end of the interaction rather than redirecting back to the relying party.<blockquote>
+<p>Note: The <code>wallet</code> response context is only suitable in combination with a SMART on FHIR or other authenticated API connection, to prevent session fixation attacks. Otherwise, the relying party must receive its response in the system browser context, and must verify that the session where the request was generated and the session where the response was provided are both sessions for the same end-user.</p>
+</blockquote>
+</li>
+</ul>
+<h5>DID SIOP Request Validation</h5>
+<p>In addition to the <a href="https://identity.foundation/did-siop/#sd-siop-request-validation">regular DID SIOP request validation</a>, the Health Wallet retrieves the <a href="https://identity.foundation/.well-known/resources/did-configuration/">well-known configuration</a> from the domain corresponding to <code>registration.client_uri</code> and verifies that the <code>kid</code> in the request header is a DID associated with the domain.</p>
+<blockquote>
+<p><strong>Bug in spec:</strong> Do NOT attempt to validate according to <a href="https://openid.net/specs/openid-connect-core-1_0.html#SelfIssuedValidation">OIDC Core 7.5</a> because this applies to the response, not the request.</p>
+</blockquote>
+<h4>DID SIOP Response</h4>
+<p>The Health Wallet displays a message to the user asking something like "Connect to lab.example.com?" (based on the <code>registration.client_uri</code> value). If the user agrees, the Health Wallet constructs a DID SIOP Response object with a header like:
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;alg&quot;</span><span class="p">:</span> <span class="s2">&quot;ES256&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;typ&quot;</span><span class="p">:</span> <span class="s2">&quot;JWT&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;kid&quot;</span><span class="p">:</span> <span class="s2">&quot;did:ion:&lt;&lt;identifer for user&gt;&gt;#&lt;&lt;verification-key-id&gt;&gt;&quot;</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<p>And a payload like:
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;iss&quot;</span><span class="p">:</span> <span class="s2">&quot;https://self-issued.me&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;did&quot;</span><span class="p">:</span> <span class="s2">&quot;did:ion:&lt;&lt;identifier for user&gt;&gt;&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;aud&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;&lt;client_id from the request&gt;&gt;&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;nonce&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;&lt;unique value&gt;&gt;&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;exp&quot;</span><span class="p">:</span> <span class="err">&lt;&lt;expiration</span> <span class="err">time</span> <span class="err">as</span> <span class="err">JSON</span> <span class="err">number</span> <span class="err">of</span> <span class="err">seconds</span> <span class="err">since</span> <span class="err">epoch&gt;&gt;</span><span class="p">,</span>
+  <span class="nt">&quot;iat&quot;</span><span class="p">:</span> <span class="err">&lt;&lt;issuance</span> <span class="err">time</span> <span class="err">as</span> <span class="err">JSON</span> <span class="err">number</span> <span class="err">of</span> <span class="err">seconds</span> <span class="err">since</span> <span class="err">epoch&gt;&gt;</span><span class="p">,</span>
+  <span class="nt">&quot;sub_jwk&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;crv&quot;</span><span class="p">:</span> <span class="s2">&quot;P-256&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;kid&quot;</span><span class="p">:</span> <span class="s2">&quot;did:ion:&lt;&lt;identifer for user&gt;&gt;#&lt;&lt;verification-key-id&gt;&gt;&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;kty&quot;</span><span class="p">:</span> <span class="s2">&quot;EC&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;x&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;&lt;curve&#39;s X coordinate&gt;&gt;&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;y&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;&lt;curve&#39;s Y coordinate&gt;&gt;&quot;</span>
+  <span class="p">},</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<p>The response is signed as a JWS with the user's DID and optionally encrypted using the lab's DID (if the request specified <code>id_token_encrypted_response_*</code>).
+The latter step requires looking inside the DID Document for an encryption key, which can be used for encrypting a payload for this party.</p>
+<blockquote>
+<p>TODO: Show the header for the JWE around it</p>
+</blockquote>
+<p>Finally, the Health Wallet submits the  <code>id_token</code> and <code>state</code> values back to the client's URL (conveyed in the <code>client_id</code> request field). If <code>response_context</code> is <code>wallet</code>, the Health Wallet may issue an HTTP call directly to the client's URL. Otherwise, the Health Wallet submits a response in the context of the system browser. For example, if <code>response_mode</code> is <code>form_post</code> and <code>response_context</code> is <code>wallet</code>, the response might be sumitted as:
+<div class="highlight"><pre><span></span><code>POST &lt;&lt;URL where response object will be posted&gt;&gt;
+Content-type: application/x-www-form-urlencoded
+
+id_token=&lt;&lt;DID SIOP Response Object as JWS or JWE&gt;&gt;
+&amp;state=&lt;&lt;state value from DID SIOP Request Object, if any&gt;&gt;
+</code></pre></div></p>
+<div class="admonition info">
+<p class="admonition-title">Authorizing FHIR Operations</p>
+<p>If the Health Wallet received the <code>openid</code> link via the FHIR <code>$HealthWallet.connect</code> operation, the DID SIOP is authorized by including the SMART on FHIR bearer token in an <code>Authorization</code> header.</p>
+</div>
+<h3 id="lab-generates-results">Lab Generates Results<a class="headerlink" href="#lab-generates-results" title="Permanent link">&para;</a></h3>
+<p>When the lab performs tests and the results come in, the lab creates a FHIR payload and a corresponding VC.</p>
+<div class="mermaid">sequenceDiagram
+participant Holder
+participant Lab
+
+note over Holder, Lab: Earlier...
+Lab -&gt;&gt; Lab: Generate Lab's DID
+Holder --&gt;&gt; Lab:  Upload DID
+Lab -&gt;&gt; Lab: If labs for holder already exist: re-generate VCs
+
+note over Lab, Holder: Lab Result Created
+Lab -&gt;&gt; Lab: Generate FHIR Representation
+Lab -&gt;&gt; Lab: Generate VC Representation
+Lab -&gt;&gt; Lab: Generate JWT Payload including Holder DID (if known) and sign
+Lab -&gt;&gt; Lab: Store on holder's account
+
+note over Lab, Holder: Later...
+Lab -&gt;&gt; Holder: Holder downloads VCs</div>
+<p>See <a href="./credential-modeling/">Modeling Verifiable Credentials in FHIR</a> for details. The overall VC structure looks like the following:</p>
+<div class="admonition info">
+<p class="admonition-title">VCs look different when represented as JWTs</p>
+<p>The example below shows a VC using the "vanilla" JSON representation. When packaging a VC into a JSON Web Token payload, there are a few differences, to retain compatibility with standard JWT claims. For example, compare <a href="https://github.com/microsoft-healthcare-madison/health-wallet-demo/blob/master/src/fixtures/vc.json">this "vanilla" JSON representation</a> with its <a href="https://github.com/microsoft-healthcare-madison/health-wallet-demo/blob/master/src/fixtures/vc-jwt-payload.json">corresponding JWT payload</a>. Note that in the JWT payload, most properties have been pushed into a <code>.vc</code> claim.</p>
+</div>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;@context&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="s2">&quot;https://www.w3.org/2018/credentials/v1&quot;</span>
+  <span class="p">],</span>
+  <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="s2">&quot;VerifiableCredential&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;https://healthwallet.cards#covid19&quot;</span><span class="p">,</span>
+  <span class="p">],</span>
+  <span class="nt">&quot;issuer&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;&lt;did:ion identifier for lab&gt;&gt;&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;issuanceDate&quot;</span><span class="p">:</span> <span class="s2">&quot;2020-05-01T11:59:00-07:00&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;credentialSubject&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;&lt;did:identifier for holder if known&gt;&gt;&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;fhirVersion&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;&lt;FHIR Version&gt;&gt;&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;fhirBundle&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&quot;resourceType&quot;</span><span class="p">:</span> <span class="s2">&quot;Bundle&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;collection&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;entry&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="err">&lt;&lt;FHIR</span> <span class="err">Resources&gt;&gt;</span>
+      <span class="p">]</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="lab-results-are-finalized">Lab Results are Finalized<a class="headerlink" href="#lab-results-are-finalized" title="Permanent link">&para;</a></h3>
+<p>In this step, the user learns that new lab results are available (e.g., by receiving a text message or email notification). To facilitate this workflow, the lab can include a link to help the user download the credentials directly, e.g., from at a login-protected page in the Lab's patient portal. The file should be served with a <code>.fhir-backed-vc</code> file extension, so the Health Wallet app can be configured to recognize this extension. Contents should be a JSON object containing an array of Verifiable Credential JWTs:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;verifiableCredential&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="s2">&quot;&lt;&lt;Verifiable Credential as JWE or JWS&gt;&gt;&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;&lt;&lt;Verifiable Credential as JWE or JWS&gt;&gt;&quot;</span>
+  <span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>Finally, the Health Wallet asks the user if they want to save any/all of the supplied credentials.</p>
+<div class="admonition info">
+<p class="admonition-title">Requesting VCs through the FHIR API</p>
+<p>The file download is the lowest common denominator. For a more seamless user experience when FHIR API connections are already in place, results may also be conveyed through a FHIR API <code>$HealthWallet.issueVc</code> operation defined here.</p>
+<p>FHIR API Example Approach</p>
+<p><a name="healthwalletissuevc-operation"></a></p>
+<h5><code>$HealthWallet.issueVc</code> Operation</h5>
+<p>A Health Wallet can <code>POST /Patient/:id/$HealthWallet.issueVc</code> to a FHIR-enabled issuer to request the generation of a specific type of Health Card. The body of the POST looks like:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;resourceType&quot;</span><span class="p">:</span> <span class="s2">&quot;Parameters&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;parameter&quot;</span><span class="p">:</span> <span class="p">[{</span>
+    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;credentialType&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;valueUri&quot;</span><span class="p">:</span> <span class="s2">&quot;https://healthwallet.cards#covid19&quot;</span>
+  <span class="p">}]</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>The <code>credentialType</code> and <code>presentationContext</code> parameters are both required. By default, the issuer will decide which identity claims to include based on the requested <code>presentationContext</code>. If the Health Wallet wants to fine-tune identity claims in the generated credentials, it can provide an explicit list of one or more <code>includeIdentityClaim</code>s, which will limit the claims included in the VC. For example, to request that only name be included:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;resourceType&quot;</span><span class="p">:</span> <span class="s2">&quot;Parameters&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;parameter&quot;</span><span class="p">:</span> <span class="p">[{</span>
+    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;credentialType&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;valueUri&quot;</span><span class="p">:</span> <span class="s2">&quot;https://healthwallet.cards#covid19&quot;</span>
+  <span class="p">},</span> <span class="p">{</span>
+    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;includeIdentityClaim&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;valueString&quot;</span><span class="p">:</span> <span class="s2">&quot;Patient.name&quot;</span>
+  <span class="p">},</span> <span class="p">{</span>
+    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;encryptForKeyId&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;valueString&quot;</span><span class="p">:</span> <span class="s2">&quot;#encryption-key-1&quot;</span>
+  <span class="p">}]</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>If no <code>encryptForKeyId</code> parameter is supplied, then the signed VC is returned unencrypted. To request encryption, the client includes an <code>encryptForKeyId</code> parameter with a <code>valueString</code>, indicating the requested encryption key ID, starting with <code>#</code>. This ensures that even if the client's DID document includes more than one encryption key, the server will know which one to use for encrypting this payload.</p>
+<p>The response is a <code>Parameters</code> resource that includes one more more <code>verifiableCredential</code> values like:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;resourceType&quot;</span><span class="p">:</span> <span class="s2">&quot;Parameters&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;parameter&quot;</span><span class="p">:[{</span>
+    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;verifiableCredential&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;valueAttachment&quot;</span><span class="p">:{</span>
+      <span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="s2">&quot;&lt;&lt;base64 encoded VC JWS or JWE&gt;&gt;&quot;</span>
+    <span class="p">}</span>
+  <span class="p">}]</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>If a client calls <code>$HealthWallet.issueVc</code> when no DID has been bound to the Patient record, the server responds with a FHIR <code>OperationOutcome</code> including the "no-did-bound" code:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;resourceType&quot;</span><span class="p">:</span> <span class="s2">&quot;OperationOutcome&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;issue&quot;</span><span class="p">:</span> <span class="p">[{</span>
+    <span class="nt">&quot;severity&quot;</span><span class="p">:</span> <span class="s2">&quot;error&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;code&quot;</span><span class="p">:</span> <span class="s2">&quot;processing&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;details&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&quot;coding&quot;</span><span class="p">:</span> <span class="p">[{</span>
+        <span class="nt">&quot;system&quot;</span><span class="p">:</span> <span class="s2">&quot;https://healthwallet.cards&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;code&quot;</span><span class="p">:</span> <span class="s2">&quot;no-did-bound&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;display&quot;</span><span class="p">:</span> <span class="s2">&quot;No DID is bound to the requested Patient account&quot;</span>
+      <span class="p">}]</span>
+    <span class="p">}</span>
+  <span class="p">}]</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<h3 id="presenting-lab-results-to-a-verifier">Presenting Lab Results to a Verifier<a class="headerlink" href="#presenting-lab-results-to-a-verifier" title="Permanent link">&para;</a></h3>
+<p>In this step, the verifier asks the user to share a COVID-19 result. The overall flow is similar to <a href="#connect-health-wallet-to-lab-account">"Connect Health Wallet to lab account"</a> above, in that it follows the DID SIOP protocol.</p>
+<h4>Initiate the Presentation</h4>
+<p>This step can happen in person or online.</p>
+<div class="mermaid">sequenceDiagram
+participant Holder
+participant Verifier
+
+Verifier -&gt;&gt; Verifier: generate openid:// link with upload URL, public key and presentation context
+
+note over Holder, Verifier: In Person Presentation
+Verifier -&gt;&gt; Verifier: Display openid:// link in QR code
+Verifier -&gt;&gt; Holder: Holder scans QR code
+
+note over Holder, Verifier: Online Presentation
+Verifier -&gt;&gt; Verifier: redirect with openid:// link
+Verifier -&gt;&gt; Holder: process redirect</div>
+<h4>Complete the Presentation</h4>
+<div class="mermaid">sequenceDiagram
+participant Holder
+participant Verifier
+
+Holder -&gt;&gt; Holder: find VCs suitable for presentation context
+Holder -&gt;&gt; Holder: let user pick VC to share
+Holder -&gt;&gt; Holder: confirm sharing
+Holder -&gt;&gt; Holder: encrypt VC with Verifier's public key
+Holder -&gt;&gt; Verifier: send encrypted VC
+Verifier -&gt;&gt; Verifier: decrypt VC
+
+note over Holder, Verifier: Verify VC
+Verifier -&gt;&gt; Verifier: validate JWT
+Verifier -&gt;&gt; Verifier: extract labs DID and resolve
+Verifier -&gt;&gt; Verifier: ...</div>
+<h4>Presentation Protocol Details</h4>
+<p>The process begins with a QR code or <code>openid://</code> link. The only differences are:</p>
+<ol>
+<li>
+<p>The SIOP Request Object includes a <code>claims</code> object asking for relevant Verifiable Credentials to be included in the response:
+    <div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="err">//</span> <span class="err">...</span> <span class="err">other</span> <span class="err">request</span> <span class="err">fields</span> <span class="err">like</span> 
+  <span class="err">//</span> <span class="err">`iss`,</span> <span class="err">`response_type`,</span> <span class="err">etc</span>
+  <span class="nt">&quot;claims&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;id_token&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&quot;https://healthwallet.cards#covid19&quot;</span><span class="p">:</span> <span class="p">{</span><span class="nt">&quot;essential&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">},</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></p>
+</li>
+<li>
+<p>Based on the requested claims, the Health Wallet prompts the user to share specific verifiable credentials (in the example above: Health Cards). The selected credentials are packaged into a Verifiable Presentation according to <a href="https://www.w3.org/TR/vc-data-model/#presentations-0">W3C Verifiable Presentations</a>.</p>
+</li>
+<li>
+<p>The <code>id_token</code> constituting the DID SIOP Response includes a <code>.vp.verifiableCredential</code> array:
+    <div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="err">//</span> <span class="err">...</span> <span class="err">other</span> <span class="err">response</span> <span class="err">fields</span> <span class="err">like</span>
+  <span class="err">//</span> <span class="err">`iss`,</span> <span class="err">`aud`,</span> <span class="err">etc.</span>
+  <span class="nt">&quot;vp&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;@context&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;https://www.w3.org/2018/credentials/v1&quot;</span><span class="p">],</span>
+    <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;VerifiablePresentation&quot;</span><span class="p">],</span>
+    <span class="nt">&quot;verifiableCredential&quot;</span><span class="p">:</span> <span class="p">[</span>
+      <span class="s2">&quot;&lt;&lt;Verifiable Credential as JWS&gt;&gt;&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;&lt;&lt;Verifiable Credential as JWS&gt;&gt;&quot;</span>
+    <span class="p">]</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></p>
+</li>
+</ol>
+<hr />
+<h3 id="potential-extensions">Potential Extensions<a class="headerlink" href="#potential-extensions" title="Permanent link">&para;</a></h3>
+<h4>Fallback for smartphone-based offline presentation</h4>
+<p>We should be able to specify additional "return paths" in the DID SIOP workflow that don't depend on an HTTP upload but instead rely on local transfer (e.g., via NFC or bluetooth)</p>
+<h4>Fallback for users without a smartphone</h4>
+<p>While it's hard to provide the same level of functionality and convenience without a mobile phone, there are still steps we can take to allow broader use of these verifiable credentials. Here's one possibleS approach to graceful degradation:</p>
+<ul>
+<li>Lab generates VCs that aren't bound to any specific user DID</li>
+<li>Lab makes VCs available for download</li>
+<li>User prints a QR Code conveying the VC, or a link to a hosted copy of the VC (optionally protected by a password or PIN)</li>
+<li>Verifier scans the barcode, retrieves the VC, and verifies signatures -- then relies on out-of band relationship with the user to match the VC to a real-world identity. For example, the user may be an employee or customer of the verifier, and thus the user's name and phone number may be known by the verifier in advance. The verifier must compare the identity attributes inside the VC with the attributes they have verified out of band.</li>
+</ul>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+        
+          <a href="credential-modeling/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Credentials
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="assets/javascripts/vendor.0ac82a11.min.js"></script>
+      <script src="assets/javascripts/bundle.f81dfb4d.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: ".",
+          features: [],
+          search: Object.assign({
+            worker: "assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+        <script src="https://unpkg.com/mermaid@8.7.0/dist/mermaid.min.js"></script>
+      
+        <script src="mermaid.js"></script>
+      
+    
+  </body>
+</html>
